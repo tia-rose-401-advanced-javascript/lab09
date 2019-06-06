@@ -1,5 +1,9 @@
 'use strict';
 
+/**
+ * 
+ */
+
 const Model = require('../memory-model.js');
 
 const schema = {
