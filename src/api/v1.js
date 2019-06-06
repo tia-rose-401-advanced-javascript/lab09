@@ -28,6 +28,13 @@ router.delete('/api/v1/:model/:id', handleDelete);
 
 // Route Handlers
 
+/**
+ * Get a list of records for model provided
+ * @route GET /api/v1/:model
+ * @returns {Object} 500 - Server error
+ * @returns {Object} 200 - { count:, resultts: [{}, {}]}
+ */
+
 
 function handleGetAll(request,response,next) {
   request.model.get()

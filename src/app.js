@@ -11,6 +11,7 @@ const cwd = process.cwd();
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
+require('../docs/config/swagger');
 
 // Esoteric Resources
 const errorHandler = require( `${cwd}/src/middleware/500.js`);
@@ -23,6 +24,7 @@ const app = express();
 // App Level MW
 app.use(cors());
 app.use(morgan('dev'));
+
 
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
