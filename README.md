@@ -4,9 +4,12 @@
 Tia Rose
 
 ### Links and Resources
-* [submission PR](https://github.com/JeffLawrence1/lab-09/pull/1)
-* [travis](https://www.travis-ci.com/jeff-401-js/lab-09)
-* [heroku](http://xyz.com)
+* [submission PR](https://github.com/tia-rose-401-advanced-javascript/lab09/pull/1)
+
+* [travis](https://www.travis-ci.com/tia-rose-401-advanced-javascript/lab09)
+[![Build Status](https://www.travis-ci.com/tia-rose-401-advanced-javascript/lab09.svg?branch=docs)](https://www.travis-ci.com/tia-rose-401-advanced-javascript/lab09)
+
+* [heroku](https://arcane-atoll-60403.herokuapp.com/)
 
 
 #### Documentation
@@ -31,7 +34,7 @@ fileWriter -> takes txt input and outputs html
 * `npm start`
 * Endpoint: `/foo/bar/`
   * Returns a JSON object with abc in it.
-* Endpoint: `/bing/zing/`
+* Endpoint: `/fizz/buzz/`
   * Returns a JSON object with xyz in it.
   
 #### Tests
