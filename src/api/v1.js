@@ -30,11 +30,11 @@ router.delete('/api/v1/:model/:id', handleDelete);
 
 /**
  * Get a list of records for model provided
- * @route GET /api/v1/:model
+ * @route GET /{model}
+ * @param {string} model.path.required
  * @returns {Object} 500 - Server error
- * @returns {Object} 200 - { count:, resultts: [{}, {}]}
+ * @returns {Object} 200 - { count: 2, resultts: [{}, {}]}
  */
-
 
 function handleGetAll(request,response,next) {
   request.model.get()
@@ -48,11 +48,28 @@ function handleGetAll(request,response,next) {
     .catch( next );
 }
 
+/**
+ * Get one record for model provided
+ * @route GET /{model}/{id}
+ * @param {string} model.path.required - Model name
+ * @param {number} id.path.required - Model id
+ * @returns {Object} 500 - Server error
+ * @returns {Object} 200 - { count: 2, resultts: [{}, {}]}
+ */
+
 function handleGetOne(request,response,next) {
   request.model.get(request.params.id)
     .then( result => response.status(200).json(result[0]) )
     .catch( next );
 }
+
+/**
+ * Creates a list of records for model provided
+ * @route POST /{model}
+ * @param {string} model.path.required - Model name
+ * @returns {Object} 500 - Server error
+ * @returns {Object} 200 - { count:2, resultts: [{}, {}]}
+ */
 
 
 function handlePost(request,response,next) {
@@ -61,12 +78,29 @@ function handlePost(request,response,next) {
     .catch( next );
 }
 
+/**
+ * Updates one record for model provided
+ * @route PUT /{model}/{id}
+ * @param {string} model.path.required - Model name
+ * @param {number} id.path.required - Model id
+ * @returns {Object} 500 - Server error
+ * @returns {Object} 200 - { count: 2, resultts: [{}, {}]}
+ */
 
 function handlePut(request,response,next) {
   request.model.put(request.params.id, request.body)
     .then( result => response.status(200).json(result) )
     .catch( next );
 }
+
+/**
+ * Deletes one record for model provided
+ * @route DELETE /{model}/{id}
+ * @param {string} model.path.required - Model name
+ * @param {number} id.path.required - Model id
+ * @returns {Object} 500 - Server error
+ * @returns {Object} 200 - { count: 1, resultts: [ {} ]}
+ */
 
 function handleDelete(request,response,next) {
   request.model.delete(request.params.id)

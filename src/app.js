@@ -30,6 +30,10 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('docs'));
 
+// const options = require('../docs/config/swagger');
+// const expressSwagger = require('express-swagger-generator')(app);
+// expressSwagger(options);
+
 // Routes
 app.use(v1Router);
 
