@@ -11,7 +11,7 @@ const cwd = process.cwd();
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
-require('../docs/config/swagger');
+// require('../docs/config/swagger');
 
 // Esoteric Resources
 const errorHandler = require( `${cwd}/src/middleware/500.js`);
@@ -30,9 +30,9 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(express.static('docs'));
 
-// const options = require('../docs/config/swagger');
-// const expressSwagger = require('express-swagger-generator')(app);
-// expressSwagger(options);
+const options = require('../docs/config/swagger');
+const expressSwagger = require('express-swagger-generator')(app);
+expressSwagger(options);
 
 // Routes
 app.use(v1Router);
