@@ -14,7 +14,7 @@ Tia Rose
 
 #### Documentation
 * [api docs](http://xyz.com) (API servers)
-* [jsdoc](http://xyz.com) (Server assignments)
+* [jsdoc](file:///Users/T.T/apprenti_devstation/bend-401/lab09/docs/index.html) (Server assignments)
 * [styleguide](http://xyz.com) (React assignments)
 
 ### Modules
