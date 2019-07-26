@@ -10,6 +10,9 @@
     "test": "jest --verbose",
     "test-watch": "jest --watchAll --verbose"
   },
+  "engines": {
+    "node": "12.2.0"
+  },
   "jest": {
     "testEnvironment": "node"
   },
