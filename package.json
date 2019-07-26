@@ -23,7 +23,7 @@
     "express": "^4.16.4",
     "express-swagger-generator": "^1.1.14",
     "jest": "^23.6.0",
-    "jsdoc": "^3.6.2",
+    "jsdoc": "^3.6.3",
     "mongodb-memory-server": "^2.9.1",
     "mongoose": "^5.4.2",
     "mongoose-schema-jsonschema": "^1.2.1",
