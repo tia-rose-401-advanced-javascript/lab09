@@ -9,13 +9,12 @@ Tia Rose
 * [travis](https://www.travis-ci.com/tia-rose-401-advanced-javascript/lab09)
 [![Build Status](https://www.travis-ci.com/tia-rose-401-advanced-javascript/lab09.svg?branch=docs)](https://www.travis-ci.com/tia-rose-401-advanced-javascript/lab09)
 
-* [heroku](https://arcane-atoll-60403.herokuapp.com/)
+* [heroku]()
 
 
 #### Documentation
-* [api docs](http://xyz.com) (API servers)
 * [jsdoc](file:///Users/T.T/apprenti_devstation/bend-401/lab09/docs/index.html) (Server assignments)
-* [styleguide](http://xyz.com) (React assignments)
+
 
 ### Modules
 
@@ -39,10 +38,8 @@ fileWriter -> takes txt input and outputs html
   
 #### Tests
 * How do you run tests?
-npm test
-* What assertions were made?
-do they do what they say they do
-* What assertions need to be / should be made?
+`npm test`
+
 
 #### UML
 
