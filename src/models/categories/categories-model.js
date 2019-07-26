@@ -7,6 +7,11 @@ const schema = {
   name: {required:true},
 };
 
+/**
+ * @class Categories
+ * @desc Categories class which is inherited from the Model Class
+ */
+
 class Categories extends Model {}
 
 module.exports = new Categories(schema);
